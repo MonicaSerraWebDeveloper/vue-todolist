@@ -86,6 +86,10 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+.marked {
+    text-decoration: line-through;
+}
+
 .fa-xmark, .text-list {
     cursor: pointer;
 }

@@ -3,7 +3,20 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      count: 0
+      todo: [
+        {
+            text: 'Fare i compiti',
+            done: true
+        },
+        {
+            text: 'Fare la spesa',
+            done: false
+        },
+        {
+            text: 'Fare il bucato',
+            done: true
+        },
+      ]
     }
   }
 }).mount('#app')
