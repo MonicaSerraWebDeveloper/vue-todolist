@@ -20,6 +20,8 @@ createApp({
     }
   },
   methods: {
-  
+    removeList: function(listIndex) {
+        this.todo.splice(listIndex, 1)
+    }
   },
 }).mount('#app')

@@ -36,7 +36,7 @@
                 <ul>
                     <div v-for="task, index in todo" class="todo-list-container">
                         <li :class="{marked: task.done === true}" class="text-list">{{ todo[index].text }}</li>
-                        <span><i class="fa-solid fa-xmark"></i></span>
+                        <span><i @click="removeList(index)" class="fa-solid fa-xmark"></i></span>
                     </div>
                     <!-- <div class="todo-list-container">
                         <li class="text-list">Fare i compiti</li>
