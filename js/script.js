@@ -17,11 +17,7 @@ createApp({
                 done: true
             },
         ],
-        newObjectList: {
-            text: '',
-            done: false
-        },
-
+        textInput: '',
     }
   },
   methods: {
@@ -30,7 +26,16 @@ createApp({
     },
 
     addNewList: function() {
-        this.todo.push(this.newObjectList)
+        if (this.textInput.length >= 5) {
+            this.todo.push(
+                 {
+                    text: this.textInput,
+                    done: false
+                 }
+            ),
+            this.textInput = ''
+        }
+
     }
   },
 }).mount('#app')
