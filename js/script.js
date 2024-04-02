@@ -35,7 +35,15 @@ createApp({
             ),
             this.textInput = ''
         }
+    },
 
+    taskDoneOrNot: function(index) {
+        if (this.todo[index].done === true) {
+            this.todo[index].done = false
+        } else {
+            this.todo[index].done = true
+        }
     }
+
   },
 }).mount('#app')
