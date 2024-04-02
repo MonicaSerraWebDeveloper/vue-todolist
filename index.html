@@ -28,7 +28,7 @@
 
         <main>
             <div class="input-container">
-                <input v-model="textInput" type="text" name="" id="" placeholder="Nuova task">
+                <input v-model="textInput" @keyup.enter="addNewList" type="text" name="" id="" placeholder="Nuova task">
                 <button @click="addNewList">Aggiungi</button>
             </div>
 
