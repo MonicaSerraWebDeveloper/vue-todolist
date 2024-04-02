@@ -8,3 +8,84 @@
     box-sizing: border-box;
 }
 
+/*--------------------
+        GENERAL
+----------------------*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/*--------------------
+        HEADER
+----------------------*/
+
+header {
+    padding: 20px 0;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 200px;
+}
+
+/*--------------------
+    MAIN INPUT
+----------------------*/
+
+.input-container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-container input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.input-container button {
+    font-family: "Lato", sans-serif;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+/*--------------------
+    MAIN TODO
+----------------------*/
+
+.todo-container {
+    width: 800px;
+    margin: 20px auto;
+    background-color: #f6f7f7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.todo-container ul {
+    padding-bottom: 15px;
+}
+
+.todo-container ul li {
+    list-style: none;
+}
+
+.todo-list-container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.fa-xmark, .text-list {
+    cursor: pointer;
+}
