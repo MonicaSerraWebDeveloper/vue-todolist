@@ -39,7 +39,7 @@
                         :class="{marked: task.done === true}" 
                         class="text-list"
                         @click="taskDoneOrNot(index)"
-                        >{{ todo[index].text }}</li>
+                        >{{ task.text }}</li>
                         <span><i @click="removeList(index)" class="fa-solid fa-xmark"></i></span>
                     </div>
                     <!-- <div class="todo-list-container">
